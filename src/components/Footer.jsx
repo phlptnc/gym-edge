@@ -23,13 +23,13 @@ function Footer() {
                                 reach your fitness goals.
                             </p>
                             <div className="flex gap-3 text-[#f5f5f5]">
-                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer">
+                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer ease-in-out duration-300">
                                     <RiFacebookFill size={25} />
                                 </div>
-                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer">
+                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer ease-in-out duration-300">
                                     <RiTwitterXFill size={20} />
                                 </div>
-                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer">
+                                <div className="button-white w-9 h-9 rounded-full bg-[#fb5b21] flex items-center justify-center cursor-pointer ease-in-out duration-300">
                                     <RiInstagramFill size={25} />
                                 </div>
                             </div>
