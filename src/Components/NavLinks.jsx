@@ -8,19 +8,19 @@ function NavLinks() {
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="/">Classes</a>
+                    <a href="/classes">Classes</a>
                 </li>
                 <li>
-                    <a href="/">Schedule</a>
+                    <a href="/schedule">Schedule</a>
                 </li>
                 <li>
-                    <a href="/">Trainers</a>
+                    <a href="/trainers">Trainers</a>
                 </li>
                 <li>
-                    <a href="/">Blog</a>
+                    <a href="/blog">Blog</a>
                 </li>
             </ul>
         </>
