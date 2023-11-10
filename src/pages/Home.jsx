@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Fitness from "../components/Fitness"
 import Banner from "../components/Banner"
 import Pricing from "../components/Pricing"
+import Post from "../components/Post"
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <Fitness />
             <Banner />
             <Pricing />
+            <Post />
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../images/logo.png"
+import logo from "../../public/assets/logo.png"
 import { RiFacebookFill, RiTwitterXFill, RiInstagramFill } from "react-icons/ri"
 
 function Footer() {

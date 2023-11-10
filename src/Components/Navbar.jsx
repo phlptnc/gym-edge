@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import NavLinks from "./NavLinks"
 import { CgMenu, CgClose } from "react-icons/cg"
-import logo from "../images/logo.png"
+import logo from "../../public/assets/logo.png"
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
