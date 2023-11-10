@@ -39,12 +39,36 @@ body {
     cursor: pointer;
 }
 
-.hero {
-    background: url(../public/assets/hero.jpg) no-repeat;
+.background {
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50%;
 }
 
+table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+td,
+th {
+    background-color: #fb5b21e1;
+    padding: 10px 10px 10px 30px;
+}
+
+th {
+    padding: 13px 10px 13px 30px;
+}
+
+th:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 20px 0 0;
+}
+
+/* shadow */
 .price-wrapper::after {
     content: "";
     background: rgb(255, 255, 255);

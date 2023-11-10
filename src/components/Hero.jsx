@@ -3,7 +3,7 @@ import React from "react"
 function Hero() {
     return (
         <>
-            <section className="hero bg-slate-600 w-full h-[90vh] text-[#f5f5f5] flex flex-col justify-center items-center text-center">
+            <section className="background bg-[url('../../assets/hero.jpg')] bg-slate-600 w-full h-[90vh] text-[#f5f5f5] flex flex-col justify-center items-center text-center">
                 <h1 className="uppercase text-[2rem] md:text-[4.5rem] font-semibold">
                     Build <span className="text-[#fb5b21]">your</span> body{" "}
                     <span className="text-[#fb5b21]">strong</span>
