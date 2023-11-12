@@ -5,6 +5,7 @@ import Banner from "../components/Banner"
 import Pricing from "../components/Pricing"
 import Post from "../components/Post"
 import BMI from "../components/BMI"
+import Banner2 from "../components/Banner2"
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Banner />
             <BMI />
             <Pricing />
+            <Banner2 />
             <Post />
         </>
     )

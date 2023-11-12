@@ -17,7 +17,7 @@ function Banner() {
                         <h2 className="uppercase font-semibold text-[3rem] min-[400px]:text-[4rem] lg:text-[6rem]">
                             Being <span className="text-[#fb5b21]">Body</span>
                         </h2>
-                        <h3 className="text-[#a4a4a4] uppercase font-semibold text-[2rem] tracking-[1rem] min-[400px]:tracking-[2.2rem] mt-[-1rem] lg:text-[3.3rem] lg:tracking-[3rem] lg:mt-[-2rem]">
+                        <h3 className="text-[#a4a4a4] uppercase font-semibold text-[2rem] tracking-[1rem] min-[400px]:tracking-[2rem] mt-[-1rem] lg:text-[3.3rem] lg:tracking-[3rem] lg:mt-[-2rem]">
                             Builders
                         </h3>
                         <button className="bg-[#fb5b21] text-[#f5f5f5] uppercase font-semibold mt-5 md:mt-2 py-4 px-14 rounded-full hover:opacity-75 duration-300 ease-in-out">
