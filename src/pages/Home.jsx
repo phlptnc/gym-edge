@@ -7,12 +7,14 @@ import Post from "../components/Post"
 import BMI from "../components/BMI"
 import Banner2 from "../components/Banner2"
 import Trainers from "../components/Trainers"
+import Classes from "../components/Classes"
 
 function Home() {
     return (
         <>
             <Hero />
             <Fitness />
+            <Classes />
             <Banner />
             <Trainers />
             <BMI />
