@@ -19,6 +19,11 @@ const trainersData = [
         image: "trainer-3",
         position: "Crossfit trainer",
     },
+    {
+        name: "Joy Isabel",
+        image: "trainer-4",
+        position: "Yoga Trainer",
+    },
 ]
 
 export default trainersData

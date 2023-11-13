@@ -1,5 +1,8 @@
 import React from "react"
+import Slider from "react-slick"
 import SectionHeader from "./sectionHeader"
+import PrevArrow from "./Buttons/PrevArrow"
+import NextArrow from "./Buttons/NextArrow"
 import trainersData from "./TrainersData"
 import { BiSolidChevronUp } from "react-icons/bi"
 import {
@@ -9,22 +12,55 @@ import {
     RiMailLine,
 } from "react-icons/ri"
 
+var settings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    draggable: true,
+    speed: 500,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            },
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+}
+
 function Trainers() {
     return (
         <section className="bg-[url('../../assets/trainer/trainers-bg.jpg')] bg-fixed bg-center bg-no-repeat bg-cover">
-            <div className="container px-10 lg:px-0 py-[9rem] ">
-                <SectionHeader title="Expert trainers" />
-
-                <div className="flex flex-row justify-between overflow-auto w-[1312px]">
+            <div className="container px-10 lg:px-0 py-[9rem] overflow-hidden relative">
+                {/* Title Header */}
+                <SectionHeader title="Expert Trainers" />
+                <Slider {...settings}>
                     {/* Card */}
                     {trainersData.map((item) => (
-                        <div
-                            className="w-[300px] relative
-
-                                after:content-[''] after:h-[4px] after:w-[20%] after:bg-[#fb5b21] after:absolute after:bottom-0 after:left-0 after:right-0 after:mx-auto after:ease-in-out after:duration-700 cursor-pointer
-                                
-                                hover:after:w-[100%]"
-                        >
+                        <div className="w-[300px] relative after:content-[''] after:h-[4px] after:w-[20%] after:bg-[#fb5b21] after:absolute after:bottom-0 after:left-0 after:right-0 after:mx-auto after:ease-in-out after:duration-700 cursor-pointer hover:after:w-[100%]">
                             {/* Upper */}
                             <div className="bg-[url('../../assets/trainer/bg-splash.png')] bg-[length:290px_400px] bg-no-repeat bg-[center_top_1.5rem] flex flex-col items-center justify-end h-[290px] relative overflow-hidden">
                                 <img
@@ -52,15 +88,12 @@ function Trainers() {
                                 </div>
                             </div>
                             {/* Lower */}
-                            <div
-                                className="lower bg-[#f5f5f5] flex flex-col justify-center items-center
-                    py-[2rem]"
-                            >
+                            <div className="lower bg-[#f5f5f5] flex flex-col justify-center items-center py-[2rem]">
                                 <p className="text-[1.5rem] font-semibold ease-in-out duration-300 hover:text-[#fb5b21]">
                                     {item.name}
                                 </p>
                                 <p className="font-semibold text-[#646464] font-sans">
-                                    Personal Trainer
+                                    {item.position}
                                 </p>
                                 <div className="flex justify-center gap-3 mt-3 text-[20px] text-[#646464]">
                                     <RiFacebookFill className="ease-in-out duration-300 hover:text-[#fb5b21]" />
@@ -71,7 +104,7 @@ function Trainers() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </Slider>
             </div>
             <div></div>
         </section>
