@@ -1,7 +1,12 @@
 import React from "react"
+import PageTitle from "../components/Title/PageTitle"
 
 function Blog() {
-    return <div>Blog</div>
+    return (
+        <>
+            <PageTitle title="Blog" />
+        </>
+    )
 }
 
 export default Blog

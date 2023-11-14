@@ -1,7 +1,11 @@
 import React from "react"
 
 function Schedule() {
-    return <div>Schedule</div>
+    return (
+        <>
+            <PageTitle title="Schedule" />
+        </>
+    )
 }
 
 export default Schedule
