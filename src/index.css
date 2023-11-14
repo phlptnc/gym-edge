@@ -139,6 +139,10 @@ th:last-child {
     color: #fb5b21;
 }
 
+.slick-slider {
+    padding-top: 3rem;
+}
+
 .slick-list {
     padding-top: 1rem;
 }

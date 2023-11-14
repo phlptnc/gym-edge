@@ -1,4 +1,5 @@
 import React from "react"
+import SectionTitle from "./SectionTitle"
 
 function Pricing() {
     const pricingData = [

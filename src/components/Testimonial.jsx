@@ -1,9 +1,10 @@
 import React from "react"
-import SectionHeader from "./sectionHeader"
+import SectionHeader from "./SectionHeader"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { BiSolidQuoteLeft } from "react-icons/bi"
+import SectionTitle from "./SectionTitle"
 
 var settings = {
     dots: true,
@@ -55,7 +56,7 @@ function Testimonial() {
         <>
             <section className="testimonials">
                 <div className="container px-10 lg:px-0 pt-[9rem] pb-[12rem]">
-                    <SectionHeader title="What client's say" />
+                    <SectionTitle title="What client's say" />
                     <Slider {...settings} className="testimonials">
                         {/* Testimonail Card */}
                         {testimonialData.map((item) => (
