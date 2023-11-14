@@ -113,27 +113,6 @@ th:last-child {
     margin-top: -12px;
 }
 
-@media (max-width: 768px) {
-    .blog:nth-child(1),
-    .blog:nth-child(2) {
-        width: 50%;
-    }
-
-    .blog:nth-child(3) {
-        display: none;
-    }
-}
-
-@media (max-width: 640px) {
-    .blog:nth-child(2) {
-        display: none;
-    }
-
-    .blog:nth-child(1) {
-        width: 100%;
-    }
-}
-
 /* Slick */
 .testimonial-card {
     display: flex !important;
@@ -160,6 +139,10 @@ th:last-child {
     color: #fb5b21;
 }
 
+.slick-list {
+    padding-top: 1rem;
+}
+
 .slick-track {
     display: flex;
     flex-direction: row;
@@ -172,7 +155,14 @@ th:last-child {
     }
 }
 
+.blog-card {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .class-card,
-.trainers-card {
+.trainers-card,
+.blog-card {
     padding: 0 2.5px 0 2.5px;
 }
