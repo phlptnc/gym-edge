@@ -60,7 +60,7 @@ function Trainers() {
                 <Slider {...settings}>
                     {/* Card */}
                     {trainersData.map((item) => (
-                        <div className="w-[300px] relative after:content-[''] after:h-[4px] after:w-[20%] after:bg-[#fb5b21] after:absolute after:bottom-0 after:left-0 after:right-0 after:mx-auto after:ease-in-out after:duration-700 cursor-pointer hover:after:w-[100%]">
+                        <div className="trainers-card w-[300px] relative after:content-[''] after:h-[4px] after:w-[20%] after:bg-[#fb5b21] after:absolute after:bottom-0 after:left-0 after:right-0 after:mx-auto after:ease-in-out after:duration-700 cursor-pointer hover:after:w-[100%]">
                             {/* Upper */}
                             <div className="bg-[url('../../assets/trainer/bg-splash.png')] bg-[length:290px_400px] bg-no-repeat bg-[center_top_1.5rem] flex flex-col items-center justify-end h-[290px] relative overflow-hidden">
                                 <img

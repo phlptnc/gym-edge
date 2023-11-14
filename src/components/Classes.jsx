@@ -14,25 +14,17 @@ var settings = {
     speed: 500,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-            },
-        },
         {
             breakpoint: 900,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                initialSlide: 2,
+                infinite: true,
+                dots: false,
             },
         },
         {
@@ -49,11 +41,11 @@ function Classes() {
     return (
         <>
             <section>
-                <div className="container px-10 lg:px-0 py-[9rem] overflow-hidden relative">
+                <div className="container px-10 lg:px-0 py-[9rem]  relative">
                     <SectionHeader title="Featured Classes" />
                     <Slider {...settings}>
                         {classData.map((item) => (
-                            <div className="class-card w-[380px] bg-[#f5f5f5] duration-300 ease-in-out hover:bg-[#fb5b21] hover:text-[#f5f5f5]">
+                            <div className="class-card w-[380px]duration-300 ease-in-out hover:text-[#f5f5f5]">
                                 {/* Upper */}
                                 <div className="h-250px relative">
                                     <img
@@ -94,7 +86,7 @@ function Classes() {
                                     </div>
                                 </div>
                                 {/* Lower */}
-                                <div className="pt-6 pb-7 px-7">
+                                <div className="lower pt-6 pb-7 px-7 bg-[#f5f5f5]">
                                     <p className="text-[1.5rem] font-semibold cursor-pointer w-fit hover:underline">
                                         {item.class}
                                     </p>

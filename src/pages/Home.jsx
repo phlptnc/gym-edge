@@ -8,6 +8,7 @@ import BMI from "../components/BMI"
 import Banner2 from "../components/Banner2"
 import Trainers from "../components/Trainers"
 import Classes from "../components/Classes"
+import Testimonial from "../components/Testimonial"
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Fitness />
             <Classes />
             <Banner />
+            <Testimonial />
             <Trainers />
             <BMI />
             <Pricing />
