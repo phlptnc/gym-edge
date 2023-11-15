@@ -45,7 +45,7 @@ function Classes() {
                     <SectionHeader title="Featured Classes" />
                     <Slider {...settings}>
                         {classData.map((item) => (
-                            <div className="class-card w-[380px]duration-300 ease-in-out hover:text-[#f5f5f5]">
+                            <div className="class-card w-[380px] duration-300 ease-in-out hover:text-[#f5f5f5]">
                                 {/* Upper */}
                                 <div className="h-250px relative">
                                     <img
