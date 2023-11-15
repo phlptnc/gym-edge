@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 import PrevArrow from "./Buttons/PrevArrow"
 import NextArrow from "./Buttons/NextArrow"
-import SectionHeader from "./sectionHeader"
+import SectionHeader from "./SectionHeader"
 import { BsPersonFill } from "react-icons/bs"
 import classData from "./ClassesData"
 

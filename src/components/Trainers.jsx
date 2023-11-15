@@ -1,6 +1,6 @@
 import React from "react"
 import Slider from "react-slick"
-import SectionHeader from "./sectionHeader"
+import SectionHeader from "./SectionHeader"
 import PrevArrow from "./Buttons/PrevArrow"
 import NextArrow from "./Buttons/NextArrow"
 import trainersData from "./TrainersData"
