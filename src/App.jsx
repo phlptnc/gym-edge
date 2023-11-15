@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import Navbar from "./components/Navbar"
+import Navigation from "./components/Navigation"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -19,7 +19,7 @@ import Sunday from "./pages/Schedule/Sunday"
 function App() {
     return (
         <>
-            <Navbar />
+            <Navigation />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />

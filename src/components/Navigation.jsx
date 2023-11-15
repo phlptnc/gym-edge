@@ -3,7 +3,7 @@ import NavLinks from "./NavLinks"
 import { CgMenu, CgClose } from "react-icons/cg"
 import logo from "/public/assets/logo.png"
 
-function Navbar() {
+function Navigation() {
     const [menuOpen, setMenuOpen] = useState(false)
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
@@ -85,4 +85,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navigation
