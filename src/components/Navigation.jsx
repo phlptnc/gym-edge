@@ -10,7 +10,7 @@ function Navigation() {
     }
     return (
         <>
-            <nav className="flex items-center py-5 px-[2rem] mx-auto fixed lg:static z-40 bg-[#fff] w-full border-b-2 border-[#fb5b21]">
+            <nav className="flex items-center py-5 px-[2rem] mx-auto fixed lg:static z-40 bg-[#fff] w-full border-b-2 border-[#fb5b21] top-0">
                 <a href="/" className="lg:mx-auto">
                     <img src={logo} alt="GymEdge logo" />
                 </a>
