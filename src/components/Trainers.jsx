@@ -36,7 +36,7 @@ var settings = {
             },
         },
         {
-            breakpoint: 480,
+            breakpoint: 500,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
