@@ -1,5 +1,5 @@
 import React from "react"
-import woman from "../../public/assets/stretching-woman.png"
+import woman from "/assets/stretching-woman.png"
 import { FaBrain, FaPersonRunning, FaArrowsUpDown } from "react-icons/fa6"
 import FitnessContent from "./FitnessContent"
 
