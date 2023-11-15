@@ -24,10 +24,11 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="classes" element={<Classes />} />
-                <Route path="Trainers" element={<Trainers />} />
-                <Route path="Blog" element={<Blog />} />
+                <Route path="trainers" element={<Trainers />} />
+                <Route path="blog" element={<Blog />} />
 
                 <Route path="schedule" element={<Schedule />}>
+                    <Route index element={<Monday />} />
                     <Route path="monday" element={<Monday />} />
                     <Route path="tuesday" element={<Tuesday />} />
                     <Route path="wednesday" element={<Wednesday />} />

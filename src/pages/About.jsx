@@ -1,6 +1,6 @@
 import React from "react"
 import PageTitle from "../components/Title/PageTitle"
-import aboutImg from "../../public/assets/about.png"
+import aboutImg from "/assets/about.png"
 import { FaCheck } from "react-icons/fa6"
 import Testimonial from "../components/Testimonial"
 

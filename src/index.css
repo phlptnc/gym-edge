@@ -170,3 +170,8 @@ th:last-child {
 .blog-card {
     padding: 0 2.5px 0 2.5px;
 }
+
+.schedule-link a.active {
+    background-color: #fb5b21;
+    color: #f5f5f5;
+}
