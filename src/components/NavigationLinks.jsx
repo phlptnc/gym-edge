@@ -1,6 +1,6 @@
 import React from "react"
 
-function NavLinks() {
+function NavigationLinks() {
     return (
         <>
             <ul className=" hidden lg:flex mx-auto gap-11 uppercase font-semibold font-sans text-lg">
@@ -54,4 +54,4 @@ function NavLinks() {
     )
 }
 
-export default NavLinks
+export default NavigationLinks

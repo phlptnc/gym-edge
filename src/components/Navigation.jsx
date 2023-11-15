@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import NavLinks from "./NavLinks"
+import NavigationLinks from "./NavigationLinks"
 import { CgMenu, CgClose } from "react-icons/cg"
 import logo from "/public/assets/logo.png"
 
@@ -14,7 +14,7 @@ function Navigation() {
                 <a href="/" className="lg:mx-auto">
                     <img src={logo} alt="GymEdge logo" />
                 </a>
-                <NavLinks />
+                <NavigationLinks />
                 <div
                     onClick={toggleMenu}
                     className="ms-auto z-50 lg:hidden fixed right-10"
