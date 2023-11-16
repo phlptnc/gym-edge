@@ -31,7 +31,7 @@ function Blog() {
                             <input
                                 type="search"
                                 placeholder="Search"
-                                className="bg-[#f5f5f5] w-full min-[900px]:w-3/5 ps-3"
+                                className="bg-[#f5f5f5] w-full min-[900px]:w-3/5 ps-3 rounded-none focus:outline-none"
                             />
                             <div className="bg-[#fb5b21] flex items-center justify-center text-[20px] text-white px-3">
                                 <FiSearch />
