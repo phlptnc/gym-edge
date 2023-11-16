@@ -1,5 +1,5 @@
 <div align='center'>
-    <img src='/src/images/logo.png'>
+    <img src='/public/assets/logo.png'>
 </div>
 
 <h2>About the project</h2>
