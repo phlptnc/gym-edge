@@ -7,7 +7,7 @@ function Trainers() {
     return (
         <>
             <PageTitle title="All Trainers" />
-            <div className="container flex outline flex-col min-[900px]:flex-row justify-between gap-10 py-[6rem] px-10 lg:px-0">
+            <div className="container flex flex-col min-[900px]:flex-row justify-between gap-10 py-[6rem] px-10 lg:px-0">
                 <div className="flex flex-wrap justify-evenly gap-8">
                     {trainersData.map((item) => (
                         <TrainerCard

@@ -50,7 +50,7 @@ function Classes() {
                                 </div>
                             </div>
                             {/* Lower */}
-                            <div className="mx-auto w-[90%] lower mt-[-2rem] relative z-10 py-4 px-7 bg-[#fff] shadow-[#eee] shadow-sm rounded-full">
+                            <div className="mx-auto w-[90%] lower mt-[-1.75rem] relative z-10 py-3 px-7 bg-[#fff] shadow-[#eee] shadow-sm rounded-full">
                                 <p className="text-[1.5rem] font-semibold cursor-pointer text-center hover:underline">
                                     {item.class}
                                 </p>
