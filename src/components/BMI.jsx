@@ -1,6 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
 
 function BMI() {
+    const [weight, setWeight] = useState(0)
+    const [height, setHeight] = useState(0)
+    const [bmi, setBmi] = useState("")
+    const [result, setResult] = useState("")
+
+    let calcBmi = (e) => {
+        e.preventDefault()
+        if (weight === 0 || height === 0) {
+            alert("Please enter a valid weight and height")
+        } else {
+            let bmi = weight / ((height * height) / 10000)
+            setBmi(bmi.toFixed(1))
+
+            // logic for message
+            if (bmi < 20) {
+                setResult("Underweight")
+            } else if (bmi >= 20 && bmi < 27) {
+                setResult("Normal")
+            } else {
+                setResult("Overweight")
+            }
+        }
+    }
+
     return (
         <>
             <section className=" background bg-[url('../../assets/bmi-bg.jpg')] bg-center">
@@ -15,12 +39,14 @@ function BMI() {
                         </p>
                         <form className="mt-1">
                             <input
+                                onChange={(e) => setWeight(e.target.value)}
                                 type="number"
                                 placeholder="Weight / kg"
                                 className="bg-black border-[1px]
                                 rounded-full ps-4 py-2 w-[125px] me-3"
                             />
                             <input
+                                onChange={(e) => setHeight(e.target.value)}
                                 type="number"
                                 placeholder="Height / cm"
                                 className="bg-black border-[1px]
@@ -31,19 +57,22 @@ function BMI() {
                             <div className="w-full min-[400px]:w-1/2 font-semibold">
                                 <p>
                                     Your BMI is:{" "}
-                                    <span className="text-[#fb5b21]">18.5</span>
+                                    <span className="text-[#fb5b21]">
+                                        {bmi}
+                                    </span>
                                 </p>
                             </div>
                             <div className="w-full min-[400px]:w-1/2 font-semibold">
                                 <p>
                                     Your weight is:{" "}
                                     <span className="text-[#fb5b21]">
-                                        Underweight
+                                        {result}
                                     </span>
                                 </p>
                             </div>
                         </div>
                         <button
+                            onClick={calcBmi}
                             type="submit"
                             className="w-[150px] bg-[#fb5b21] py-[10px] rounded-full cursor-pointer hover:opacity-75 duration-300 ease-in-out"
                         >

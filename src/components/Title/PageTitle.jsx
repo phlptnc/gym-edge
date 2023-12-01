@@ -2,6 +2,12 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 function PageTitle(props) {
+    const goTop = () => {
+        window.scrollTo({
+            top: 0,
+        })
+    }
+
     return (
         <>
             <div className="bg-[url('../../assets/header-bg.jpg')] bg-center py-[7rem] relative">
@@ -11,7 +17,11 @@ function PageTitle(props) {
                     </h2>
                     <div className="text-white absolute left-0 right-0 mx-auto bottom-[-1.5rem]">
                         <p className="w-fit mx-auto bg-[#fb5b21] rounded-full px-7 py-3">
-                            <Link to=".." className="hover:underline">
+                            <Link
+                                onClick={goTop}
+                                to=".."
+                                className="hover:underline"
+                            >
                                 Home
                             </Link>{" "}
                             / {props.title}
